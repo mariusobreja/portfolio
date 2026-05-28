@@ -1,0 +1,151 @@
+.hero {
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(184, 146, 74, 0.08) 0%, transparent 68%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 8rem 2rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-greeting {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 4.5vw, 3.8rem);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: rgba(248, 244, 237, 0.62);
+  line-height: 1.78;
+  margin-bottom: 0.75rem;
+  max-width: 500px;
+}
+
+.hero-langs {
+  font-size: 0.8rem;
+  color: rgba(248, 244, 237, 0.38);
+  margin-bottom: 2rem;
+}
+
+.hero-langs strong {
+  color: rgba(248, 244, 237, 0.55);
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.hero-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(184, 146, 74, 0.25);
+  border-radius: var(--r-lg);
+  padding: 1.75rem;
+  position: relative;
+}
+
+.hero-card-badge {
+  position: absolute;
+  top: -11px;
+  left: 1.25rem;
+  font-size: 0.67rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--navy);
+  padding: 0 0.5rem;
+}
+
+.hero-stat {
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-stat:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.hero-stat-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(248, 244, 237, 0.35);
+  margin-bottom: 0.2rem;
+}
+
+.hero-stat-value {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  color: var(--white);
+}
+
+.hero-stat-value small {
+  font-size: 0.82rem;
+  font-family: var(--sans);
+  color: rgba(248, 244, 237, 0.45);
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.25rem 4rem;
+  }
+  .hero-card {
+    display: none;
+  }
+}
