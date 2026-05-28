@@ -148,7 +148,7 @@ export const siteData = {
       title: 'Adventour',
       desc: 'React Native mobile app reimagining how people explore new places. Responsible for back-end architecture, in-app algorithms, API integration, authentication, and Stripe checkout.',
       tech: ['React Native', 'TypeScript', 'Node.js', 'PostgreSQL', 'Auth0', 'Expo'],
-      github: 'https://github.com/',
+      github: '',
       demo: '',
     },
   ],
