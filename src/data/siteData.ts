@@ -138,10 +138,10 @@ export const siteData = {
     {
       num: '02',
       title: 'Players Bazaar',
-      desc: 'Full-stack e-commerce web app facilitating the purchase of football players. Built the complete frontend and backend including user registration, login, player search, and secure Stripe checkout.',
-      tech: ['React', 'Node.js', 'Stripe', 'Auth0', 'MongoDB', 'Netlify'],
-      github: 'https://github.com/',
-      demo: 'https://playersbazaar.netlify.app',
+      desc: 'Full-stack marketplace demo for browsing, filtering, and “purchasing” football players. React frontend on Netlify, Express API on Railway, with Auth0 login and Stripe test checkout.',
+      tech: ['React', 'Express', 'Auth0', 'Stripe', 'Netlify', 'Railway'],
+      github: 'https://github.com/mariusobreja/Players-Bazaar',
+      demo: 'https://players-bazaar-mariusobreja.netlify.app',
     },
     {
       num: '03',
